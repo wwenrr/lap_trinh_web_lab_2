@@ -1,0 +1,86 @@
+main {
+  border-top: 2px solid black;
+  display: grid;
+  grid-template-columns: 20% auto 100px;
+}
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 20% auto;
+  }
+}
+main nav .menu {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 5px;
+  border: 2px solid black;
+}
+main nav .menu h2 {
+  border-bottom: 2px solid black;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+main nav .menu p {
+  padding-left: 20px;
+}
+main section {
+  padding: 5px 10px;
+  border: 2px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main section .display {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main section .display .warper {
+  border: 2px solid black;
+  padding: 10px 10px 15px 10px;
+  cursor: pointer;
+}
+main section .display .warper .img_wrap {
+  height: 170px;
+  width: 150px;
+  background-color: gray;
+}
+main section .display .warper .img_wrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section .display .warper .details {
+  margin-top: 15px;
+  text-align: center;
+}
+main section .display .warper .details button {
+  margin-top: 3px;
+  font-size: 0.7rem;
+  padding: 2px 10px;
+}
+main section .direct_cta {
+  margin-top: 15px;
+  display: flex;
+  width: 250px;
+  margin-left: auto;
+}
+main section .direct_cta button {
+  width: 50px;
+  padding: 5px 10px;
+}
+main section .direct_cta .cta {
+  display: flex;
+}
+main aside {
+  margin: auto;
+}
+@media (max-width: 900px) {
+  main aside {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
