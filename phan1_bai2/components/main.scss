@@ -1,0 +1,117 @@
+main {
+    display: grid;
+    grid-template-columns: 20% auto 100px;
+    // background-color: #9EC5E8; 
+    border: 2px solid black;
+
+    @media (max-width: 900px) {
+        & {
+            grid-template-columns: 20% auto;
+        }
+    }
+
+    nav {
+        .menu {
+            margin: 0 auto;
+            width: 100%;
+
+            h2 {
+                border-bottom: 2px solid black;
+                text-align: center;
+                padding: 0 20px;
+                font-size: 1rem;
+            }
+
+            border: 2px solid black;
+
+            p {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    section {
+        padding: 5px 10px;
+        border: 2px solid black;
+
+        .multi_img_wraper {
+            display: flex;
+            flex-direction: column;
+
+            .large_img {
+                width: 100%;
+                aspect-ratio: 1;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+
+                    object-fit: cover;
+                }
+            }
+
+            .other_img {
+                margin-top: 5px;
+                width: 100%;
+                height: 25%;
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                
+                .warp {
+                    width: 22%;
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .content1 {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            .summary {
+                margin-left: 10px;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                }
+
+                button {
+                    cursor: pointer;
+                    display: block;
+                    width: 100px;
+                    margin: auto;
+                    margin-top: 20%;
+                    border-radius: 20px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        .des {
+            margin-top: 15px;
+        }
+    }
+
+    aside {
+        margin: auto;
+
+        @media (max-width: 900px) {
+            & {
+                display: none;
+            }
+        }
+    }
+}
